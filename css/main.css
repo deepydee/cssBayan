@@ -81,14 +81,14 @@ body {
   height: 0;
   width: 0;
   padding: 0;
-  transition: all .4s ease-in-out;
+  transition: all .8s ease-in-out;
 }
 
 .accordion__item-img {
   width: 0;
   height: 0;
   opacity: 0;
-  transition: all .4s ease-in-out;
+  transition: all .8s ease-in-out;
 }
 
 .toggler {
