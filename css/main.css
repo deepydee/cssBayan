@@ -1,14 +1,18 @@
 :root {
   --main-bg-color: #fff;
-  --header-color: hsl(225, 13%, 12%);
+  --header-color: hsl(221, 11%, 27%);
   --text-color: hsl(225, 15%, 11%);
+  --accent-color: hsl(221, 52%, 49%);
 }
 
 html {
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
 }
 
 body {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
   min-width: 320px;
   min-height: 100vh;
   margin: 0;
@@ -21,23 +25,47 @@ body {
   color: var(--text-color);
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.accordion__header {
+  color: var(--header-color);
+}
+
+.accordion__item {
+  width: 100%;
+  cursor: pointer;
+  padding: 1rem 0;
+  border-top: 1px solid hsl(225, 34%, 89%);
+}
+
+.accordion__item-header {
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
 /* Mobile */
 @media (min-width: 320px) {
   body {
-    min-height: 560px;
+    /* min-height: 560px; */
   }
+
 }
 
 /* Tablet */
 @media (min-width: 820px) {
   body {
-    min-height: 1180px;
+    /* min-height: 1180px; */
   }
 }
 
 /* Desktop */
 @media (min-width: 1920px) {
   body {
-    min-height: 1080px;
+    /* min-height: 1080px; */
   }
 }
